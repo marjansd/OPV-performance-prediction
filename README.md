@@ -46,7 +46,7 @@ cd your-repo
 pip install -r requirements.txt
 jupyter notebook morphology_rf_feature_selection.ipynb
 
-⚙️ Notebook Instructions
+##⚙️ Notebook Instructions
 In # Load data, change the filename based on your material and target.
 
 In # Separate features and target, select your desired target (Jsc or FF) and comment out the others.
@@ -60,7 +60,7 @@ ex:
 In # Plot prediction, choose the right metric to visualize and comment out the other.
 
 
-### 📂 Repository Structure
+## 📂 Repository Structure
 📁 input/
  ├── Features_jsc_P3HT_PCBM.csv
  ├── Features_jsc_PM6_Y6.csv
@@ -77,18 +77,18 @@ In # Plot prediction, choose the right metric to visualize and comment out the o
 📘 README.md
 
 
-📥 Input Files Description
+###📥 Input Files Description
 📊 Morphology Descriptor CSVs (for model training)
 Files with 150 samples each, 17 features, and one target (Jsc or FF). Use subsets of 25, 50, or 100 morphologies if needed.
 
-🎻 Random Seed CSVs (for Violin Plots)
+###🎻 Random Seed CSVs (for Violin Plots)
 These store R² or MSE scores across 100 random seeds.
 Used to generate violin plots (plotting code not included).
 
-🛠️ Config Files
+###🛠️ Config Files
 Text files with simulation parameters (mobility, V<sub>oc</sub>, solver settings, etc.) used by XDD for each material system.
 
-📊 Output
+###📊 Output
 Feature selection summary
 
 Final model performance on test set (R² and MSE)
@@ -97,9 +97,9 @@ Feature importance plots
 
 Parity plots for predictions
 
-🤝 Citation
+##🤝 Citation
 Please cite the paper once it’s published. Citation details will be added here.
 
-📬 Contact
+##📬 Contact
 marjansd@iastate.edu
 https://github.com/marjansd
