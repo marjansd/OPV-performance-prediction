@@ -39,7 +39,7 @@ Click below to open the notebook:
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/your-username/your-repo/blob/main/morphology_rf_feature_selection.ipynb)
 
- 📁 Upload your input CSV and config files when prompted.
+ 📁 Upload your input CSV files
 
  ---
 
