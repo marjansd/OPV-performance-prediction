@@ -46,6 +46,7 @@ cd your-repo
 pip install -r requirements.txt
 jupyter notebook morphology_rf_feature_selection.ipynb
 
+---
 ## ⚙️ Notebook Instructions
 
 In # Load data, change the filename based on your material and target.
@@ -85,14 +86,20 @@ Used to generate violin plots (plotting code not included).
 ### 🛠️ Config Files
 Text files with simulation parameters (mobility, V<sub>oc</sub>, solver settings, etc.) used by XDD for each material system.
 
+---
+
 ## 📊 Output
 Feature selection summary
 Final model performance on test set (R² and MSE)
 Feature importance plots
 Parity plots for predictions
 
+---
+
 ## 🤝 Citation
 Please cite the paper once it’s published. Citation details will be added here.
+
+---
 
 ## 📬 Contact
 marjansd@iastate.edu
