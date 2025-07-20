@@ -46,7 +46,7 @@ cd your-repo
 pip install -r requirements.txt
 jupyter notebook morphology_rf_feature_selection.ipynb
 
-##⚙️ Notebook Instructions
+## ⚙️ Notebook Instructions
 In # Load data, change the filename based on your material and target.
 
 In # Separate features and target, select your desired target (Jsc or FF) and comment out the others.
