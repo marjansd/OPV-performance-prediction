@@ -46,22 +46,26 @@ Click below to open the notebook:
 ## ⚙️ Notebook Instructions
 
 In # Load data, change the filename based on your material and target.
+
 In # Separate features and target, select your desired target (Jsc or FF) and comment out the others.
+
 In # Set up RandomForestRegressor, set n_estimators depending on dataset size:
+
 ex:
 50 morphologies: [2, 5, 10, 20, 25, 30, 40, 50]
 150 morphologies: [2, 5, ..., 150]
+
 In # Plot prediction, choose the right metric to visualize and comment out the other.
 
 ---
 
 ## 📂 Repository Structure
 
-📁 input/
- ├── Features_jsc_P3HT_PCBM.csv
- ├── Features_jsc_PM6_Y6.csv
- ├── Features_FF_P3HT_PCBM.csv
- ├── Features_FF_PM6_Y6.csv
+📁 input/   graspi_features_corset150_ff_p3htpcbm.csv
+ ├── graspi_features_corset150_jsc_p3htpcbm.csv
+ ├── graspi_features_corset150_ff_p3htpcbm.csv
+ ├── graspi_features_corset150_jsc_pm6y6.csv
+ ├── graspi_features_corset150_ff_pm6y6.csv
  ├── Random_seeds_jsc_P3HT_PCBM.csv
  ├── Random_seeds_jsc_PM6_Y6.csv
  ├── Random_seeds_FF_P3HT_PCBM.csv
