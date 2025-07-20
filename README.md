@@ -63,14 +63,23 @@ In # Plot prediction, choose the right metric to visualize and comment out the o
 
 📁 input/   graspi_features_corset150_ff_p3htpcbm.csv
  ├── graspi_features_corset150_jsc_p3htpcbm.csv
+ 
  ├── graspi_features_corset150_ff_p3htpcbm.csv
+ 
  ├── graspi_features_corset150_jsc_pm6y6.csv
+ 
  ├── graspi_features_corset150_ff_pm6y6.csv
+ 
  ├── Random_seeds_jsc_P3HT_PCBM.csv
+ 
  ├── Random_seeds_jsc_PM6_Y6.csv
+ 
  ├── Random_seeds_FF_P3HT_PCBM.csv
+ 
  ├── Random_seeds_FF_PM6_Y6.csv
+ 
  ├── config_P3HT_PCBM.txt
+ 
  └── config_PM6_Y6.txt
 📓 morphology_rf_feature_selection.ipynb
 📘 README.md
