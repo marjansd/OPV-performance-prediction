@@ -1,0 +1,105 @@
+######################################  		******* Parameter sweep *******  ######################################
+########################
+mu_n = 6e-6								# Mobilities of electron (n), hole (p) and exciton (x). Unit: (m^2/Vs)
+mu_p = 1.4e-6
+E_g = 1.15
+tau_x_donor = 3.23e-8					# lifetime of exciton (unit: s)
+tau_x_acceptor = 2.1e-8	
+########################
+######################################  		******* Parameter sweep *******  ######################################
+
+Gx_donor = 1e28					
+Gx_acceptor = 1e28
+ret_factor = 0.08
+
+muRatio = 1e-3
+interfaceThk = 6e-9
+transportLayer = 5.0
+
+refine_lvl = 8
+dt = 1e-11								# time step (sec)
+time_limit = 5e-8
+
+mu_x_donor = 8.5e-9
+mu_x_acceptor = 1.6e-9
+
+
+Voc = 0.585
+V_app_step = 0.065
+dV_app_ratio = 1						# V_app_step = V_app_step*dV_app_ratio
+
+max_x = 2
+max_y = 2
+max_z = 1
+
+outputting_strategy = 1					# outputting_strategy = 0 and output_rate = 2 to output every 2 time-steps. outputting_strategy = 1 to output only the above files
+output_rate = 150
+
+time_adaptivity_strategy = 2 			# 1 aggresive, 2 moderate, 3 NORM_ADAPT, 4 LOGSPACE, 5 Constant increament
+recombination_strategy = 1 				# 0 disables, 1 uniform, 2 interface
+solver_strategy = 2 					# 0 pulse_generation require pulse duration, 1 steady_state, 2 transient, 3 steady Pulse
+
+if_resume_checkpoint = false
+V_app_start = 0.0
+t_start = 0.0
+
+solver_options_dd = {
+		ksp_atol = 1e-12
+		ksp_rtol = 1e-12
+		ksp_stol = 1e-10
+		ksp_type = "bcgs"
+		pc_type = "asm"
+		#sub_pc_type = "lu"
+		
+		ksp_diagonal_scale = ""
+		ksp_diagonal_scale_fix = ""
+		
+		# monitor
+		snes_monitor = ""
+		snes_converged_reason = ""
+		ksp_monitor = ""
+		ksp_converged_reason = ""
+		ksp_max_it = 20000
+		mattransposematmult_via = "matmatmult"
+};
+
+solver_options_ex = {
+		ksp_atol = 1e-12
+		ksp_rtol = 1e-12
+		ksp_stol = 1e-10
+		ksp_monitor = ""
+		ksp_converged_reason = ""
+};
+
+###################################################################################################### Likely unchanged
+######################################################
+eps_A = 3.9 					# Relative dielectric constants of donor (D) and acceptor (A)
+eps_D = 3.0
+
+semi_fermi_Jsc_calc = false
+basisFunction = "linear" 		# "quadratic"
+mfree = false # "true"
+
+Height = 100e-9					# Height of the morph
+T = 300							# temperature, in K
+a = 1.8e-9						# e-h separation distance, in meter
+
+morphology_file = "morph.txt"
+
+Generation_donor_profile = 0 			# 0-> constant, 1->exponential, 2->polynomial
+Generation_acceptor_profile = 0
+
+if_custom_recombination = false
+if_custom_dissociation = false
+
+ex_diss_a_scaling = 1e0
+ex_diss_d_scaling = 1e0
+
+boundary_refine_lvl = 4
+boundary_depth = 0.2
+max_refine_lvl = 4
+boundary_integration_rel_order = 0
+
+dt_max = 5e-6
+######################################################
+###################################################################################################### Likely unchanged
