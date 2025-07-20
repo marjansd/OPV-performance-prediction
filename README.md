@@ -33,20 +33,16 @@ The full pipeline is applied independently to two material systems: **P3HT:PCBM*
 
 ## 🚀 How to Run the Code
 
-### ▶️ Option 1: Run on Google Colab
+This project is designed to run directly in [Google Colab](https://colab.research.google.com), no installation required.
+
+Click below to open the notebook:
+
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/your-username/your-repo/blob/main/morphology_rf_feature_selection.ipynb)
 
-> No setup needed — upload the input files when prompted.
+ 📁 Upload your input CSV and config files when prompted.
 
-### 💻 Option 2: Run Locally
+ ---
 
-```bash
-git clone https://github.com/your-username/your-repo.git
-cd your-repo
-pip install -r requirements.txt
-jupyter notebook morphology_rf_feature_selection.ipynb
-
----
 ## ⚙️ Notebook Instructions
 
 In # Load data, change the filename based on your material and target.
@@ -57,8 +53,10 @@ ex:
 150 morphologies: [2, 5, ..., 150]
 In # Plot prediction, choose the right metric to visualize and comment out the other.
 
+---
 
 ## 📂 Repository Structure
+
 📁 input/
  ├── Features_jsc_P3HT_PCBM.csv
  ├── Features_jsc_PM6_Y6.csv
@@ -71,17 +69,17 @@ In # Plot prediction, choose the right metric to visualize and comment out the o
  ├── config_P3HT_PCBM.txt
  └── config_PM6_Y6.txt
 📓 morphology_rf_feature_selection.ipynb
-📄 requirements.txt
 📘 README.md
 
 
 ## 📥 Input Files Description
+
 ### 📊 Morphology Descriptor CSVs (for model training)
-Files with 150 samples each, 17 features, and one target (Jsc or FF). Use subsets of 25, 50, or 100 morphologies if needed.
+Files with 150 samples each, 17 features, and one target (Jsc or FF). Use subsets of 25, 50, or 100 morphologies if needed. The 25th subset starts from the first second row to the 26th row of the main uploaded file. You can create a separate CSV file for the desired dataset size and upload that one. 
 
 ### 🎻 Random Seed CSVs (for Violin Plots)
-These store R² or MSE scores across 100 random seeds.
-Used to generate violin plots (plotting code not included).
+The files are test R²  scores across 100 random seeds(10 for clustering and 10 for splitting data) for 25, 50,100, and 150 dataset sizes.
+These files are used to generate violin plots (plotting code not included).
 
 ### 🛠️ Config Files
 Text files with simulation parameters (mobility, V<sub>oc</sub>, solver settings, etc.) used by XDD for each material system.
@@ -89,6 +87,7 @@ Text files with simulation parameters (mobility, V<sub>oc</sub>, solver settings
 ---
 
 ## 📊 Output
+
 Feature selection summary
 Final model performance on test set (R² and MSE)
 Feature importance plots
@@ -102,5 +101,8 @@ Please cite the paper once it’s published. Citation details will be added here
 ---
 
 ## 📬 Contact
+
 marjansd@iastate.edu
 https://github.com/marjansd
+
+---
