@@ -61,7 +61,10 @@ In # Plot prediction, choose the right metric to visualize and comment out the o
 
 ## 📂 Repository Structure
 
-📁 input/   graspi_features_corset150_ff_p3htpcbm.csv
+📁 input/   
+
+ ├── graspi_features_corset150_ff_p3htpcbm.csv
+ 
  ├── graspi_features_corset150_jsc_p3htpcbm.csv
  
  ├── graspi_features_corset150_ff_p3htpcbm.csv
