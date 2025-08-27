@@ -1,10 +1,10 @@
 # OPV-performance-prediction
 
-## 📘 A Data-Driven Framework for Morphology–Performance Mapping  
-**Virtual Instruments, High Performance Computing, 3D Microstructures**
+## 📘 Three dimensional morphology–performance mapping for organic solar cells: a data driven framework
 
 This repository contains the code and input data associated with the research paper:  
-**"A Data-Driven Framework for Morphology–Performance Mapping: Virtual Instruments, High Performance Computing, 3D Microstructures"**, submitted to *Journal of Materials Research*.
+**"Three dimensional morphology–performance mapping for
+organic solar cells: a data driven framework"**, submitted to *Journal of Materials Research*.
 
 ---
 
